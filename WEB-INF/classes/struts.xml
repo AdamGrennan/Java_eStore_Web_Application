@@ -1,0 +1,75 @@
+<!DOCTYPE struts PUBLIC
+"-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+"http://struts.apache.org/dtds/struts-2.0.dtd">
+
+
+<struts>
+    <package name="default" extends="struts-default">
+
+	<action name="registerUser" class="Register" method ="register">
+        <result name="SUCCESS">/jsp/login.jsp</result>
+		 <result name="ERROR">/jsp/index.jsp</result>
+		
+		 </action>
+		 
+			<action name="loginUser" class="Login" method ="login">
+        <result name="SUCCESS">/jsp/Home.jsp</result>
+	    <result name="ERROR">/jsp/login.jsp</result>
+    </action>
+		
+			<action name="logoff" class="Login" method ="logoff">
+        <result name="SUCCESS">/jsp/login.jsp</result>
+		 <result name="ERROR">/jsp/error.jsp</result>
+    </action>
+		
+			<action name="viewProfile" class="Profiles" method ="viewProfile">
+        <result name="SUCCESS">/jsp/profile.jsp</result>
+    </action>	
+	
+	
+	<action name="viewAddItem" class="Items" method ="viewAddItems">
+    <result name="SUCCESS">/jsp/addItem.jsp</result>
+</action>
+
+		<action name="addItem" class="Items" method="addItems">
+    <result name="SUCCESS">/jsp/Home.jsp</result>
+	 <result name="ERROR">/jsp/error.jsp</result>
+</action>
+
+	<action name="viewAllItems" class="Items" method ="viewAllItems">
+    <result name="SUCCESS">/jsp/viewItems.jsp</result>
+</action>
+
+		<action name="viewAllProfile" class="Profiles" method="viewAllUsers">
+    <result name="SUCCESS">/jsp/allProfiles.jsp</result>
+</action>
+
+		<action name="searchProfiles" class="Profiles" method="searchProfile">
+    <result name="SUCCESS">/jsp/searchProfile.jsp</result>
+</action>
+
+	<action name="searchUser" class="Profiles" method="searchForUser">
+    <result name="SUCCESS">/jsp/viewProfile.jsp</result>
+	 <result name="ERROR">/jsp/error.jsp</result>
+	 
+</action>
+
+	<action name="submitBid" class="Bids" method="submitBid">
+    <result name="SUCCESS">/jsp/Home.jsp</result>
+	 <result name="ERROR">/jsp/error.jsp</result>
+</action>
+
+<action name="viewBids" class="Bids" method="viewMyBids">
+    <result name="SUCCESS">/jsp/myBids.jsp</result>
+    <result name="ERROR">/jsp/error.jsp</result>
+</action>
+
+<action name="allBids" class="Bids" method="viewAllBids">
+    <result name="SUCCESS">/jsp/itemBids.jsp</result>
+    <result name="ERROR">/jsp/error.jsp</result>
+</action>
+
+
+    </package>
+
+</struts>
