@@ -4,9 +4,9 @@ This Java web application simulates a e-commerce platform, it allows users to cr
 
 ## Features
 
--**Account Creation**: User can create and login to accounts.
--**Place Items for Sale**: User can list items for sale.
--**Place Bids**: User can bid on items for sale.
+- **Account Creation**: User can create and login to accounts.
+- **Place Items for Sale**: User can list items for sale.
+- **Place Bids**: User can bid on items for sale.
 
 ## Technologies Used
 - Java (Servlets, JSP, JDK 21)
